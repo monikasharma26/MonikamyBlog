@@ -1,0 +1,76 @@
+/* Style sheet for the Mobile first strategy */
+
+/* styles for body element */
+body{
+    background-color: #1d1d1c;
+}
+
+/* styles for header section */
+header{
+    text-align: center;
+}
+
+/* styles for nav element */
+nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1.0em;
+}
+/* styles for fluid image */
+img {
+    max-width: 100%;
+  }
+  
+main h2 {
+    text-align: center;
+  }
+
+/* styles for teh container id */
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* add styles for the unordered list in teh nav */
+nav ul {
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  /* add style for the list items in the nav */
+nav li {
+
+    background-color: #D63253;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+  }
+  
+  /* add styles for the anchor tag inside the li */
+  nav li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  /* styles for the main div */
+main {
+    font-family: 'Bellefair';font-size: 22px;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    padding: 1em;
+    border-radius: 2em 0 2em 0;
+    background-color: #ffffff;
+    opacity: 0.85;
+  }
+
+  /* footer styles */
+footer {
+  font-family: "Times New Roman";
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 2em;
+  color: #ffffff;
+}
