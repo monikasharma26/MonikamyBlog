@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Bellefair' rel='stylesheet'>
     <title>Monika Sharma</title>
 </head>
 <body>
@@ -13,85 +14,158 @@
 
     <!-- section for the headings of the webpage -->
     <header>
-      <a href="index.html"><img src="images/logo.png" alt="Monika Sharma"></a>  
-    </header>
-
-     <!-- navigation section of the website to add links to other pages -->
-     <nav>
+      <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Monika Sharma" width="100"></a>   
+      <div class="menu-bar">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
         <ul>
-          <li><a href="index.html">About</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </header>
+
+     <!-- navigation section of the website to add links to other pages -->
+    
   
         <!-- add banner for home page  -->
         <div id="banner" class="desktop">
             <img src="images/bgm.png" alt=" Home Image">
+            <div class="banner-text">
+              <h2>I am Monika Sharna</h2>
+              <h5>Good experience in grasping the functional requirements, developing <br>the existing functionality enhancements, and delivering them bug free.</h5>
+            </div>
         </div>
     <!-- main content of the web page -->
     <main>
-        <div class="mobile">
-        <h2>About</h2>
-        <p>
-            six years of progressive experience as a Technology Analyst in the Enterprise Retail & Marketing, Insurance & Health, Banking & Payments domains.Good experience in grasping the functional requirements, developing the existing functionality enhancements, and delivering them bug free.Skilled in understanding Business requirements, Designed documents.Hands on Experience in GUI Designing and Development, Defect logging & Tracking.
-            Good communication skills and domain knowledge with comprehensive understanding and practical knowledge of various operating systems, Applications and software
-      
-        </p>
-        <div>
-            <h3>TECHNICAL SKILL SET</h3>
-            <ul>
-              <li>Front-end Languages: Java,ASP.Net,Swift,C++,Objective C,HTML5, JavaScript</li>
-              <li>Back-end: MySQL,SQL Server,FireBase</li>
-              <li>Web Services: JSON, SOAP, Rest</li>
-              <li>Tools: Jira,Mantis,, Slack</li>
-            </ul>
-            <h3>ANALYTICAL SKILL SET</h3>
-            <ul>
-              <li>Research Oriented: The projects which are at a nascent stage of conceptualization require a lot of deliberation and expert consultancy. I offer the consultancy and the MR services as well on such kind of projects</li>
-              <li>Process Driven: I adopt a step-by-step process in development. This helps me write clean and optimized codes</li>
-              <li>Updated With Recent Technologies: It is possible that the technology you are expert at today may turn obsolete tomorrow. So it is always better to keep yourself updated with the recent technologies. I keep myself abreast with the latest developments in mobility solutions</li>
-              <li>Fluent communication skills and good inter-personal skills complete me as a full package of the developer. I love to make long-term relationships and never let my clients complaint because of the superior quality I deliver as an end-product</li>
-            </ul>
+      <section class="about-box">
+        <div class="wrapper">
+          <div class="about-outer">
+          <div class="image-about">
+            <img src="images/about-img.jpg" alt="" />
+          </div>
+          <div class="content-about">
+            <h2>About Me</h2>
+            <h5>Hello! <span class="orange-text">I'm Monika Sharma</span>
+            </h5>
+            <p>Six years of progressive experience as a Technology Analyst in the Enterprise Retail & Marketing, Insurance & Health, Banking & Payments domains.Good experience in grasping the functional requirements, developing the existing functionality enhancements, and delivering them bug free. </p>
+            
+            <div class="footer-about">
+              <div class="footer-box">
+               <h4>6+</h4>
+               <p>Years Experiance
+              </p>
+              </div>
+
+              <div class="footer-box">
+                <h4>120+</h4>
+                <p>Projects Done
+               </p>
+               </div>
+
+            </div>
+            <a href="about.html" class="common-btn read_button">
+              Read More
+            </a>
           </div>
         </div>
+        </div>
+      </section>
 
-        <div class="desktop">
-            <div class="clearfix">
-              <div class="box" style="background-color:#bbb;height: auto;"><h2>ABOUT</h2>
-                <p>
-                    Six years of progressive experience as a Technology Analyst in the Enterprise Retail & Marketing, Insurance & Health, Banking & Payments domains.Good experience in grasping the functional requirements, developing the existing functionality enhancements, and delivering them bug free.Skilled in understanding Business requirements, Designed documents.Hands on Experience in GUI Designing and Development, Defect logging & Tracking.
-                    Good communication skills and domain knowledge with comprehensive understanding and practical knowledge of various operating systems, Applications and software.   
-                </p>
+      <section class="technical-skills">
+        <div class="wrapper">
+          <div class="heading text-center">
+            <h2>TECHNICAL SKILL SET</h2>
+
+          </div>
+          <div class="skill-block">
+            <div class="skillbox">
+              <div class="icon-skill">
+                <img src="images/front-end.png" alt="" />
               </div>
-  
-              <div>
-                <h3>TECHNICAL SKILL SET</h3>
-                <ul>
-                <li>Front-end Languages: C#,Java,ASP.Net,Swift,C++,Objective C,HTML5,Ajax,JSP,JavaScript,MainFrame</li>
-                <li>Back-end: MySQL,SQL Server 2008 r2,FireBase</li>
-                <li>Web Services: JSON,SOAP,Rest</li>
-                 <li>Tools: Jira,Splunk,GIT,Maven,LBAdmin,Mantis,Sockeye, Slack</li>
-                 </ul>
+              <h5>Front-end Languages</h5>
+              <p>Java, ASP.Net, Swift, C++, Objective C, HTML5, JavaScript</p>
+            </div>
+
+            <div class="skillbox">
+              <div class="icon-skill">
+                <img src="images/backend.png" alt="" />
               </div>
-              <h3>ANALYTICAL SKILL SET</h3>
-              <ul>
-                <li>Mapping business requirements and providing customized specifications & selection of appropriate techniques</li>
-                <li>Designing and developing software Applications.•	Sound understanding of the Application Development with exposure in business logic code, documentation, development, designing & troubleshooting for software..Working knowledge of builds submission, user interface and coding standards.</li>
-                <li>Successfully implemented multiple IT projects from inception to delivery belonging to multiple domains like E-commerce, Media, Life Science, Pharmaceuticals for UK and U.S based clients.</li>
-                <li>Strong communication, collaboration & team players skills with proficiency at grasping new technical concepts and utilize the same in productive manner.</li>
-              </ul>
+              <h5>Back-end</h5>
+              <p>MySQL, SQL Server, FireBase</p>
+            </div>
+
+            <div class="skillbox">
+              <div class="icon-skill">
+                <img src="images/solutions.png" alt="" />
+              </div>
+              <h5>Web Services</h5>
+              <p>JSON,XML,Soap and Rest</p>
+            </div>
+
+            <div class="skillbox">
+              <div class="icon-skill">
+                <img src="images/tools.png" alt="" />
+              </div>
+              <h5>Tools</h5>
+              <p>Jira, Mantis,, Slack</p>
             </div>
           </div>
+        </div>
+      </section>
+        
+      <section class="skill-analytics">
+        <div class="wrapper">
+          <div class="heading text-center">
+            <h2>ANALYTICAL SKILL SET</h2>
+
+          </div>
+          <div class="an-skill-outer">
+            <div class="an-skillbox">
+              
+              <p>Designing and developing software Applications.• Sound understanding of the Application Development with exposure in business logic code, documentation, development, designing & troubleshooting for software..Working knowledge of builds submission, user interface and coding standards.</p>
+            </div>
+            <div class="an-skillbox">
+              <p>Successfully implemented multiple IT projects from inception to delivery belonging to multiple domains like E-commerce, Media, Life Science, Pharmaceuticals for UK and U.S based clients.</p>
+            </div>
+            <div class="an-skillbox">
+              <p>Strong communication, collaboration & team players skills with proficiency at grasping new technical concepts and utilize the same in productive manner.</p>
+            </div>
+            <div class="an-skillbox">
+              <p>Mapping business requirements and providing customized specifications & selection of appropriate techniques</p>
+            </div>
+          </div>
+        </div>
+      </section>
+            
+           
+    
     </main>
 
     <!-- footer section for the copyright and links to social media  -->
     <footer>
-        &copy; Copyright 2020. All Rights Reserved. <br>
-        <a href="https://www.linkedin.com/in">Monika Sharma</a>
+      <div class="wrapper">
+        <div class="ft-inner">
+      <p>&copy; Copyright 2020. All Rights Reserved. <a href="https://www.linkedin.com/in">Monika Sharma</a></p>
+      <ul class="social-icon">
+        <li><a href="https://ca.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+        </div>
+        </div>
       </footer>
 
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script>
+        $(".menu-bar").click(function(){
+  $("nav").toggleClass("open-close");
+});
+</script>
 </div>
 </body>
 </html>

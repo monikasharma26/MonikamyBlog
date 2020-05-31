@@ -121,6 +121,10 @@ nav li {
     height: 20%;
     margin-top: 1em;
   }
+
+  .menu-bar{
+    display: none;
+  }
   /* styles for about */
   .footer-about {
     display: flex;
@@ -428,9 +432,79 @@ footer a {
   header{
     background: #f9f9f9;
   }
+
+  .technical-skills{
+    background: #020312;
+    padding: 50px 0;
+  }
+  
+  .skill-block{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .skillbox{
+    background: #12141c;
+    width: calc(25% - 20px);
+    padding: 20px;
+    height: 100%;
+    min-height: 200px;
+  }
+  .skillbox img{
+    width: 60px;
+  }
+  .skillbox h5{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .skillbox p  {
+    color: #dfdfdf;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .technical-skills .heading h2{
+    color: #ffffff;
+  }
+
+  .heading h2{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 42px;
+  }
+  /* analytics skill set */
+  .skill-analytics{
+    padding: 50px 0;
+     background-color: #f8f9fa;
+  }
+  .an-skill-outer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .an-skillbox{
+    width: calc(50% - 10px);
+    padding: 20px;
+    height: 100%;
+    min-height: 150px;
+    background: #ffffff;
+    box-shadow: 0px 0px 7px 0px #00000021;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .an-skillbox p{
+    color: #424242;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
   /* Media Query for teh tablet view port targets screen only */
 /* minimum width is 481px */
-
+@media only screen and (min-width: 685px) {
     /* styles specifies teh horizontal display for the nav li */
     nav li {
       display: inline;
@@ -617,75 +691,7 @@ footer a {
   
   }
   /* skills */
-  .technical-skills{
-    background: #020312;
-    padding: 50px 0;
-  }
   
-  .skill-block{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .skillbox{
-    background: #12141c;
-    width: calc(25% - 20px);
-    padding: 20px;
-    height: 100%;
-    min-height: 200px;
-  }
-  .skillbox img{
-    width: 60px;
-  }
-  .skillbox h5{
-    font-size: 20px;
-    margin: 0;
-    margin-top: 10px;
-  }
-  .skillbox p  {
-    color: #dfdfdf;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 0;
-  }
-  .technical-skills .heading h2{
-    color: #ffffff;
-  }
-
-  .heading h2{
-    margin: 0;
-    margin-bottom: 30px;
-    font-size: 42px;
-  }
-  /* analytics skill set */
-  .skill-analytics{
-    padding: 50px 0;
-     background-color: #f8f9fa;
-  }
-  .an-skill-outer{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .an-skillbox{
-    width: calc(50% - 10px);
-    padding: 20px;
-    height: 100%;
-    min-height: 150px;
-    background: #ffffff;
-    box-shadow: 0px 0px 7px 0px #00000021;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  .an-skillbox p{
-    color: #424242;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.6;
-    font-weight: 300;
-  }
     /* styles for the eqiup class */
     .equip {
       display: inline;
@@ -921,8 +927,10 @@ footer a {
   /* Media query for desktop width size 992*/
   @media only screen and (max-width: 1199px){
     .banner-text {
-      left:55%;
-    }
+      left: 0;
+      transform: translate(0% , -50%);
+      padding-left: 3em;
+  }
     .wrapper{
       max-width: 955px;
       padding: 0 15px;
@@ -938,6 +946,9 @@ footer a {
   }
   .skillbox{
     min-height: 226px;
+  }
+  nav li{
+    margin-left: 1.5em;
   }
   }
 
@@ -1002,16 +1013,44 @@ footer{
 .heading h2 {
   font-size: 28px;
 }
-.banner-text {
-  position: static;
-  top: 0;
-  left:0;
-  color: #ffffff;
-  text-align: center;
-  transform: none;
+.logo{
+  margin-left: 1em;
+  width: 100px;
 }
-.heading h2 {
-  font-size: 24px;
+nav{
+  margin-right: 1em;
+}
+nav li a{
+  height: 85px;
+  line-height: 85px;
+  font-size: 16px;
+}
+
+.banner-text{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.table-outer table{
+  display: none;
+}
+.table-outer .mobile {
+  display: block;
+}
+.table-outer{
+  padding: 20px 0;
+}
+.duties-rols{
+  padding: 30px 0;
+}
+.text-left.heading h2{
+  margin-bottom: 20px;
+}
+.top-address figure{
+  width: 100%;
+  margin-top: 20px;
+}
+.top-address{
+  flex-wrap: wrap;
 }
 }
 
@@ -1030,8 +1069,9 @@ footer{
     font-size: 28px;
   }
   .skillbox {
-    width: 50%;
-    min-height: 170px; 
+    width: calc(50% - 10px);
+    min-height: 200px; 
+    margin-bottom: 20px;
   }
   .icon-skill img {
     width: 70px;
@@ -1056,14 +1096,138 @@ skill-block {
 .main{
   border-radius: 0;
 }
-
+.ft-inner{
+  flex-wrap: wrap;
+  text-align: center;
+}
+footer p{
+  width: 100%;
+  text-align: center;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 20px;
+}
+.image-about{
+  width: 100%;
+}
+.about-outer{
+  flex-wrap: wrap;
+}
+.content-about{
+  width: 100%;
+}
+.about-box{
+  padding-bottom: 0;
+}
+th, td {
+  border: 0.1em solid #eeeeee;
+  padding: 1em;
+  text-align: left;
+  font-size: 1.1em;
+  padding: 10px;
+  font-size: 16px;
+}
+.project-section{
+  padding: 10px 0;
+}
+.project-section .mobile{
+  display: none;
+}
+.project-table{
+  width: 100%;
+  overflow: auto;
+}
+.map iframe{
+  height: 200px;
+}
 }
 /*  */
+@media only screen and (max-width: 684px){
+  header{
+    position: relative;
+    height: 70px;
+  }
+  .menu-bar{
+    position: absolute;
+    right: 1em;
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  nav{
+    position: absolute;
+    right: -1px;
+    top: 70px;
+    z-index: 99;
+    width: 250px;
+    margin-right: 0;
+    display: none;
+  }
+  nav li{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    background: #f9f9f9;
+    border-radius: 0;
+    text-align: left;
+  }
+  nav ul{
+    flex-wrap: wrap;
+  }
+  nav li a{
+    height: auto;
+    line-height: inherit;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  .logo {
+    margin-left: 1em;
+    width: 50px;
+    margin-bottom: -7px;
+}
+.content-about h5{
+  margin: 0;
+}
+.banner-text h5{
+  margin-top: 0;
+}
+.banner-text h2{
+  margin-bottom: 10px;
+}
+.content-about{
+  padding-left: 0;
+  text-align: left;
+}
+.content-about h2{
+  text-align: left;
+  margin: 10px 0;
+}
+.footer-box h4{
+  margin: 0;
+}
+
+.open-close{
+  display: block;
+}
+.about-outer{
+  padding-bottom: 30px;
+}
+}  
 @media only screen and (max-width: 640px){
 .wrapper{
   width: 100%;
 }
 }
+
  /* Media query for desktop width size 640*/
  @media only screen and (max-width: 567px){
   .icon-skill img {
@@ -1077,6 +1241,15 @@ skill-block {
   }
   .heading h2 {
     font-size: 18px;
+    }
+    #banner{
+      height: 250px;
+      
+    }
+    #banner img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
 }
 
@@ -1103,6 +1276,9 @@ skill-block {
 ul.social-icon {
   margin: 0;
   padding: 0;
+}
+.banner-text h5 {
+  display: none;
 }
 }
 
